@@ -238,18 +238,96 @@
             </div>
         </section>
 
-        <!-- Proyectos (Se añadirá en feature/proyectos) -->
+        <!-- Proyectos -->
         <section id="proyectos" class="py-24 px-6 bg-slate-900/50">
             <div class="max-w-6xl mx-auto">
                 <div class="flex items-center gap-4 mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold">Mis <span class="text-gradient">Proyectos</span></h2>
                     <div class="h-px bg-slate-700 flex-1"></div>
                 </div>
-                <!-- Los proyectos se agregarán más adelante en la rama feature/proyectos -->
-                <div class="glass p-12 text-center rounded-2xl border border-slate-700 border-dashed">
-                    <i class="fa-solid fa-code text-5xl text-slate-500 mb-4"></i>
-                    <h3 class="text-2xl font-semibold text-slate-300">Próximamente...</h3>
-                    <p class="text-slate-500 mt-2">Los proyectos están en desarrollo y serán añadidos en breve.</p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyecto 1 -->
+                    <div class="glass rounded-2xl overflow-hidden border border-slate-700/50 hover:border-primary/50 transition-all group flex flex-col h-full hover:-translate-y-2 duration-300">
+                        <div class="h-48 bg-slate-800 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                                <i class="fa-solid fa-boxes-stacked text-6xl text-slate-600"></i>
+                            </div>
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-primary transition-colors">Sistema de Gestión de Inventario</h3>
+                            <p class="text-slate-400 text-sm mb-4 flex-1">
+                                Desarrollo para el control de stock y ventas de una Pyme. Incluye alertas de bajo stock, registro de ingresos/egresos y reportes básicos.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-medium rounded-full border border-blue-500/20">Python</span>
+                                <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-medium rounded-full border border-cyan-500/20">MySQL</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="#" class="flex-1 glass py-2 rounded-lg text-center text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-700 transition-colors border border-slate-600">
+                                    <i class="fa-brands fa-github mr-1"></i> Repo
+                                </a>
+                                <a href="#" class="flex-1 bg-primary/10 py-2 rounded-lg text-center text-sm font-medium text-primary hover:bg-primary hover:text-slate-900 transition-colors border border-primary/20">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="glass rounded-2xl overflow-hidden border border-slate-700/50 hover:border-secondary/50 transition-all group flex flex-col h-full hover:-translate-y-2 duration-300">
+                        <div class="h-48 bg-slate-800 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                                <i class="fa-solid fa-laptop-code text-6xl text-slate-600"></i>
+                            </div>
+                            <div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-secondary transition-colors">Landing Page Interactiva</h3>
+                            <p class="text-slate-400 text-sm mb-4 flex-1">
+                                Página web responsiva con modo oscuro, animaciones al hacer scroll y validación de formularios en tiempo real.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-orange-500/10 text-orange-400 text-xs font-medium rounded-full border border-orange-500/20">HTML/CSS</span>
+                                <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-xs font-medium rounded-full border border-yellow-500/20">JavaScript</span>
+                                <span class="px-3 py-1 bg-teal-500/10 text-teal-400 text-xs font-medium rounded-full border border-teal-500/20">Tailwind</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="#" class="flex-1 glass py-2 rounded-lg text-center text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-700 transition-colors border border-slate-600">
+                                    <i class="fa-brands fa-github mr-1"></i> Repo
+                                </a>
+                                <a href="#" class="flex-1 bg-secondary/10 py-2 rounded-lg text-center text-sm font-medium text-secondary hover:bg-secondary hover:text-slate-900 transition-colors border border-secondary/20">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="glass rounded-2xl overflow-hidden border border-slate-700/50 hover:border-purple-500/50 transition-all group flex flex-col h-full hover:-translate-y-2 duration-300">
+                        <div class="h-48 bg-slate-800 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                                <i class="fa-solid fa-calculator text-6xl text-slate-600"></i>
+                            </div>
+                            <div class="absolute inset-0 bg-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-purple-400 transition-colors">Calculadora de Algoritmos</h3>
+                            <p class="text-slate-400 text-sm mb-4 flex-1">
+                                Aplicación de escritorio para resolver problemas de lógica de programación. Desarrollada con interfaz gráfica para facilitar su uso.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-red-500/10 text-red-400 text-xs font-medium rounded-full border border-red-500/20">Java</span>
+                                <span class="px-3 py-1 bg-slate-500/10 text-slate-300 text-xs font-medium rounded-full border border-slate-500/20">Swing/JavaFX</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="#" class="w-full glass py-2 rounded-lg text-center text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-700 transition-colors border border-slate-600">
+                                    <i class="fa-brands fa-github mr-1"></i> Ver Repositorio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
